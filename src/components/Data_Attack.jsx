@@ -68,7 +68,7 @@ function Data_Attack() {
   useEffect(() => {
     if (isColorLoaded) {
       fetchAttackers();
-      const intervalId = setInterval(fetchAttackers, 500);
+      const intervalId = setInterval(fetchAttackers, 1000);
       return () => clearInterval(intervalId);
     }
   }, [isColorLoaded]);
