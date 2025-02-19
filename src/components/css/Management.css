@@ -1,0 +1,454 @@
+.management-container {
+  padding: 20px;
+  color: white; /* Ensures text color contrasts the background */
+}
+
+.management-message {
+  color: lightgreen;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.management-section {
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  background-color: rgba(18, 26, 54, 0.8); /* Adds a subtle background */
+}
+
+.management-section h2 {
+  margin-bottom: 15px;
+  text-align: left;
+  color: #00bcd4;
+}
+
+.management-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+
+.management-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.management-table th {
+  padding: 12px 15px;
+  text-align: center;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-weight: bold;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.management-table .container-column th{
+  text-align: center;
+}
+
+.management-table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1); /* สีพื้นหลังอ่อน */
+}
+
+.management-table tbody tr:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.2); /* สีพื้นหลังเข้ม */
+}
+
+
+.management-table td input[type="checkbox"] {
+  margin: 0 auto; /* ตรงกลาง */
+  display: inline-block;
+  width: 24px; /* ขนาด */
+  height: 24px; /* ขนาด */
+  border-radius: 4px; /* มุมโค้ง */
+  border: 2px solid #fff; /* เส้นขอบสีขาว */
+  background-color: #1a1a1a; /* พื้นหลังเข้ม */
+  cursor: pointer;
+}
+
+.management-table td input[type="checkbox"]:checked {
+  background-color: #00bcd4; /* สีเมื่อถูกเลือก */
+  border-color: #007bff; /* เส้นขอบเมื่อถูกเลือก */
+}
+
+.management-table td input[type="checkbox"]:hover {
+  border-color: #00bcd4; /* เส้นขอบเมื่อ Hover */
+  background-color: #004d73; /* พื้นหลังเมื่อ Hover */
+}
+
+.management-table .CheckBox{
+  width: 20px;
+  text-align: center;
+}
+
+
+
+
+.btn-delete {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-delete:hover {
+  background-color: #ff1a1a;
+}
+
+.btn-change-password{
+  height: 35px;
+  margin-top: 10px;
+
+}
+
+
+
+.popup input,
+.add-user-form input,
+.add-user-form select,
+.change-password-form input,
+.change-password-form button {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: rgba(30, 30, 30, 0.9);
+  color: white;
+}
+
+.add-user-form input:focus,
+.change-password-form input:focus {
+  border-color: #00bcd4;
+  outline: none;
+}
+
+/* .add-user-form {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px; 
+  margin-left: 0; 
+  align-items: stretch; 
+} */
+
+.add-user-form select,
+.add-user-form input {
+  width: 100%; /* ขยายความกว้างฟิลด์ให้เต็ม */
+}
+
+.add-user-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+
+.btn-inviteOfAddnewuser,
+.btn-cancelOfAddnewuser,
+.btn-change-password,
+.btn-delete,
+.btn-AddNewUser,
+.btn-Display_Pedding_Invite,
+.btn-search,
+.btn-saveOfEditRole,
+.btn-cancelOfEditRole,
+.btn-reset-otp,
+.btn-closeOfVerifyOTP,
+.btn-Confirm-OfChangepassword,
+.btn-cancel-OfChangepassword,
+.btn-verify-otp,
+.btn-cancel-otp {
+  padding: 10px 15px;
+  /* background-color: #007bff; */
+  background-color: #09a3bb;
+  /* background: linear-gradient(0deg, #5f678582, #1f1f1f); */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:  0.2s;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.btn-inviteOfAddnewuser:hover,
+.btn-cancelOfAddnewuser:hover,
+.btn-change-password:hover,
+.btn-delete:hover,
+.btn-AddNewUser:hover,
+.btn-Display_Pedding_Invite:hover,
+.btn-search:hover,
+.btn-saveOfEditRole:hover,
+.btn-cancelOfEditRole:hover,
+.btn-reset-otp:hover,
+.btn-closeOfVerifyOTP:hover,
+.btn-Confirm-OfChangepassword:hover,
+.btn-cancel-OfChangepassword:hover,
+.btn-verify-otp:hover,
+.btn-cancel-otp:hover {
+  background-color: #09a3bb;
+  background: linear-gradient(0deg, #5f678582, #057c8f);
+
+}
+
+.btn-reset-otp{
+  margin-left: 5px;
+}
+
+
+.btn-search{
+  border-radius: 20px;
+  position: relative; /* ใช้สำหรับควบคุมการจัดตำแหน่งของข้อความ */
+  display: inline-flex; /* ให้ปุ่มจัดการเนื้อหาเป็นกลุ่ม */
+  align-items: center; /* จัดให้เนื้อหาอยู่ตรงกลาง */
+  justify-content: center;
+  padding: 9px 25px;
+  cursor: pointer;
+  /* background: linear-gradient(0deg, #5f678582, #057c8f); */
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  margin-right: 2px;
+  
+
+}
+
+.btn-search .IconSearch {
+  transition: opacity 0.3s ease; /* เพิ่ม Transition ให้ Icon */
+  background: transparent;
+  font-size: 14px;
+}
+
+.btn-search:hover .IconSearch {
+  opacity: 0; /* ซ่อน Icon เมื่อ Hover */
+}
+
+.btn-search .btn-search-text {
+  position: absolute;
+  opacity: 0;
+  font-size: 15px;
+  font-weight:bolder;
+  /* font-weight: bold; */
+  color: white;
+  transition: opacity 0.3s ease; /* เพิ่ม Transition ให้ข้อความ */
+
+}
+
+.btn-search:hover .btn-search-text {
+  opacity: 1; /* แสดงข้อความเมื่อ Hover */
+}
+
+.Search_input{
+  background: linear-gradient(0deg, #0b0b0b82, #3c3c3c);
+  border: none;
+  outline: 1px solid #5e5e5e;
+  position: relative;
+}
+
+.Search_input:focus{
+  background: #000;
+}
+
+.search-container{
+  position: relative;
+}
+
+.change-password-form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+/* สไตล์สำหรับ PopUp */
+/* ปรับขนาด Popup ให้พอดีกับเนื้อหา */
+.popup-overlay {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.6); /* พื้นหลังมืด */
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+}
+
+.popup {
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+max-width: 40%; 
+min-width: 300px; 
+max-height: 90%; 
+overflow-y: auto; 
+text-align: center;
+}
+
+.pendingInvite{
+  max-width: 70%; 
+min-width: 300px; 
+}
+
+/* .popup {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 40%;
+  min-width: 300px;
+  max-height: 90%;
+  overflow-y: auto;
+  text-align: center;
+} */
+
+
+/* สไตล์สำหรับตารางใน Popup */
+.popup table {
+width: 100%;
+border-collapse: collapse;
+margin: 20px 0;
+}
+
+.popup table th,
+.popup table td {
+padding: 8px;
+text-align: left;
+border: 1px solid #ddd;
+color: #000;
+}
+
+.popup table td{
+  color: #fff;
+}
+
+.popup table th {
+background-color: #007bff;
+color: white;
+font-weight: bold;
+}
+
+.popup table tr:nth-child(even) {
+background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* ปรับขนาดปุ่มภายใน Popup */
+/* .popup button {
+padding: 10px 20px;
+margin: 10px;
+background-color: #007bff;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.2s;
+}
+
+.popup button:hover {
+background-color: #0056b3;
+} */
+
+.management-table td svg {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.management-table td svg:hover {
+  color: #0056b3; /* Darker shade of blue on hover */
+}
+
+
+.otp-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* พื้นหลังมืด เหมือนกับ .popup-overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000; /* ยังคงให้ OTP PopUp อยู่ด้านบนสุด */
+}
+
+.otp-popup {
+  background: white;
+  padding: 20px;
+  border-radius: 10px; /* มุมโค้งเหมือนกับ .popup */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 40%; /* จำกัดขนาดความกว้างสูงสุด เหมือนกับ .popup */
+  min-width: 300px; /* ขนาดความกว้างขั้นต่ำ */
+  max-height: 90%; /* จำกัดความสูงไม่ให้เกินหน้าจอ */
+  overflow-y: auto; /* เพิ่ม scroll หากเนื้อหาเยอะ */
+  text-align: center;
+}
+
+.otp-popup h3 {
+  margin-bottom: 15px;
+  color: #000; /* สีข้อความ */
+}
+
+.otp-popup p {
+  color: #333; /* สีข้อความเพิ่มเติม */
+}
+
+.otp-popup-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: rgba(30, 30, 30, 0.9); /* สีพื้นหลังเหมือนกับฟอร์ม */
+  color: white;
+}
+
+.otp-popup-input:focus {
+  border-color: #00bcd4;
+  outline: none;
+}
+
+.otp-popup-buttons {
+  display: flex;
+  justify-content: center; /* วางปุ่มตรงกลาง */
+  gap: 10px;
+}
+
+.otp-popup-buttons button {
+  padding: 10px 20px;
+  background-color: #007bff; /* สีปุ่ม */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.otp-popup-buttons button:hover {
+  background-color: #0056b3; /* เปลี่ยนสีปุ่มเมื่อ hover */
+}
+
+

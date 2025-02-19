@@ -1,0 +1,252 @@
+/* Overall Layout */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0vh;
+}
+
+.login-left {
+  background: #082648;
+  padding: 2rem;
+  width: 30rem;
+  height: 24.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px 0 0 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* .login-left h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #5036d5;
+} */
+
+
+h2 {
+  font-size: 2rem;
+  /* font-weight: 200; */
+  color: #ffff;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.input-group input {
+  width: 180%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  background: transparent;
+  color: white;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.input-group input::placeholder {
+  color: #bbb; /* สีตัวอักษร Placeholder */
+  font-size: 14px;
+}
+
+.input-group input:focus {
+  border-bottom: 2px solid #09a3bb; /* สีเมื่อโฟกัส */
+  color: white;
+}
+
+
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.icon{
+  /* outline: 1px solid red; */
+  background: transparent;
+  height: 1rem;
+  width: 1rem;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%) translateX(9rem);
+}
+
+
+
+.input-field {
+  width: 200%;
+  outline: 1px solid black;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 18px;
+  background: #f9f9f9;
+  color: black;
+  margin-left: -60px;
+}
+
+.input-field::placeholder {
+  color: #bbb;
+}
+
+.input-field:focus {
+  border-bottom: 2px solid #09a3bb;
+  color: white;
+}
+
+
+
+
+/* Reserved space for error message */
+.error-container {
+  height: 30px; /* Reserve space for error message */
+  margin-bottom: 10px; /* Add some spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-message {
+  color: #fff;
+  background-color: #ff4d4f;
+  border: 1px solid #d9363e;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 5px 10px;
+  text-align: center;
+  display: none; /* Hidden by default */
+  position: relative;
+  top: 0;
+  width: fit-content;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.error-message.active {
+  display: block; /* Show only when there's an error */
+}
+
+.btn-login {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  background: linear-gradient(0deg, #3d425682, #057c8f);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background: #09a3bb;
+}
+
+.login-right {
+  background: linear-gradient(0deg, #0b3566, #17a2b8);
+  /* background: linear-gradient(0deg, #075a66, #17a2b8); */
+  /* background-color: #17a2b8;  */
+  /* สีพื้นหลัง */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  width: 30rem; /* ความกว้างของส่วนขวา */
+  height: 25rem; /* ความสูงเต็มพื้นที่ */
+  color: white;
+  text-align: center;
+  clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+  border-radius: 0 20px 120px 0; /* มุมโค้งขวา */
+  padding: 2rem; /* ระยะห่างภายใน */
+  margin-left: -72px;
+}
+
+
+.login-right h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-left: 5rem;
+}
+
+.login-right .Text_line2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-left: 5rem;
+}
+
+.login-right img{
+  margin-top: -15px;
+  height: 38vh; /* Adjust based on container size */
+}
+
+
+.forgotpassword{
+  color: #ffff;
+  text-decoration: underline;
+  width: 8.2rem;
+  cursor: pointer;
+}
+.forgotpassword:hover{
+  color: #09a3bb;
+  text-decoration: underline;
+}
+
+.popup-overlay .popup{
+  background: #082648;
+}
+
+.popup-overlay .popup .change_email{
+  border-radius: 20px;
+  padding: 13px;
+  width: 18rem;
+  font-size: 15px;
+  border: none;
+  margin-top: 20px;
+}
+
+.popup-overlay .popup .change_email:focus{
+  background: #082648;
+
+}
+
+.popup-overlay .popup .btn_reset_email,
+.popup-overlay .popup .btn_cancel_email{
+  /* width: 100%; */
+  padding: 0.8rem;
+  font-size: 1rem;
+  background: linear-gradient(0deg, #3d425682, #057c8f);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: 0.3s;
+}
+.popup-overlay .popup .btn_reset_email:hover,
+.popup-overlay .popup .btn_cancel_email:hover{
+  background: #09a3bb;
+}
+
+
+
+.btn-signup {
+  padding: 1rem 2.5rem;
+  background: #fff;
+  color: #5036d5;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.btn-signup:hover {
+  background: #ddd;
+}

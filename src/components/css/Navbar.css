@@ -1,0 +1,204 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px; /* Adjusted padding for better spacing */
+  background: linear-gradient(90deg, #1B213B, #32589f);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: sticky; /* Sticky positioning */
+  top: 0; /* Sticks to the top of the viewport */
+  z-index: 1000; /* Ensures it stays above other content */
+  height: 65px; /* Slightly taller for balanced spacing */
+}
+
+/* Logo Section */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Reduced gap for better balance */
+}
+
+.navbar-logo img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-logo h1 {
+  font-size: 20px; /* Slightly smaller for better alignment */
+  font-weight: 600;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+
+/* Dropdown Menu */
+.user-dropdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px; /* Adjusted gap for tighter grouping */
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  font-size: 12px; /* Adjusted for proportional size */
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.user-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.user-icon svg {
+  width: 25px; /* Slightly larger icon size */
+  height: 25px;
+  color: #ffffff;
+  background-color:  rgba(0, 0, 0, 0.446);
+  border-radius: 50px;
+  margin-top: 5px;
+}
+
+.Arrow {
+  font-size: 10px;
+  transition: transform 0.3s ease, margin-top 0.3s ease; /* เพิ่ม transition สำหรับ margin-top */
+  margin-top: 5px;
+}
+
+.Arrow.rotate {
+  transform: rotate(180deg);
+  margin-top: -5px; /* ขยับลูกศรขึ้นเล็กน้อยเมื่อหมุน */
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 70px; /* Adjusted for perfect alignment */
+  right: 0;
+  background-color: #1e1e1e;
+  color: white;
+  padding: 8px 15px; /* Reduced padding for compact dropdown */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  text-align: left; /* จัดข้อความให้ชิดซ้าย */
+  display: grid;
+  gap: 8px;
+}
+
+.dropdown-menu button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  display: block; /* ให้ปุ่มแสดงเป็น block */
+  width: 100%; /* ให้ปุ่มกินพื้นที่เต็ม */
+  text-align: left; /* จัดข้อความให้อยู่ซ้าย */
+}
+
+.dropdown-menu button:hover {
+  color: #00bcd4;
+  text-decoration: underline;
+}
+
+
+/* Menu Links */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Increased spacing for readability */
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  
+}
+
+.menu a {
+  font-size: 14px; /* Slightly smaller text for proportional size */
+  font-weight: 500;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 8px 12px; /* Adjusted padding for better fit */
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+  position: relative;
+  font-size: 14px; /* Adjusted for proportional size */
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: #00bcd4;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.menu a:hover {
+  color: #00bcd4;
+  background: rgba(0, 188, 212, 0.1);
+}
+
+.menu a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Middle Section */
+.middle_sec {
+  text-align: center;
+  display: grid;
+  gap: 4px;
+}
+
+.middle_sec h1 {
+  font-size: 18px; /* Adjusted for proportional size */
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.middle_sec span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #00bcd4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px 15px;
+    height: auto; /* Let the height adjust automatically */
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .user-dropdown {
+    justify-content: center;
+  }
+}

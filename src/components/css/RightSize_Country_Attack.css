@@ -1,0 +1,146 @@
+/* Table container adjustments */
+.table-container2 {
+  width: 178%; /* Full width */
+  height: 315px; /* Set fixed height for scrolling */
+  overflow-y: auto; /* Vertical scrolling inside container */
+  background-color: rgba(22, 50, 91, 0.8); /* Semi-transparent background */
+  padding: 0; /* Remove padding for alignment */
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: 1px solid rgba(56, 56, 56, 0.5); /* Semi-transparent border */
+  p{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+  }
+}
+
+/* Table adjustments */
+.country-table2 {
+  width: 100%;
+  border-spacing: 0; /* Use spacing instead of collapse */
+}
+
+/* Sticky header */
+.country-table2 th {
+  position: sticky;
+  font-size: 15px;
+  top: 0;
+  z-index: 10; /* Ensure the header stays on top */
+  background-color: rgba(1, 8, 45, 0.952); /* Semi-transparent header */
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 1px 10px;
+  text-align: center;
+  border: 1px solid rgba(56, 56, 56, 0.5); /* Semi-transparent border */
+}
+
+/* Table rows */
+.country-table2 td {
+  padding: 10px;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(47, 55, 74, 0.5); /* Semi-transparent row border */
+}
+
+.country-table2 tr:nth-child(even) {
+  background-color: rgba(0, 129, 129, 0.3); /* Alternate row with transparency */
+}
+
+.country-table2 tr:nth-child(odd) {
+  background-color: #0d2633b6; /* Alternate row with transparency */
+}
+
+.Count2{
+  text-align: center;
+}
+
+.btn_hideShow2{
+  /* outline: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 50px;
+  /* transform: rotate(-90deg); */
+  margin-top: 130px;
+  border-radius: 5px 0px 0px 5px;
+  cursor: pointer;
+  background-color: #0f3f56;
+}
+
+.text_btn2{
+  transform: rotate(-90deg);
+  font-size: 12px;
+}
+
+
+/* Flag image styling */
+.country-table2 img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+/* Center align for ID column */
+.country-table2 td:first-child {
+  text-align: center;
+}
+
+.titles2{
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1440px) {
+  .table-container2{
+    height: 295px;
+  }
+  .btn_hideShow2{
+    /* outline: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50px;
+    height: 100px;
+    margin-top: 115px;
+    border-radius: 5px 0px 0px 5px;
+    cursor: pointer;
+  }
+  .table-container2 p{
+    font-size: 15px;
+  }
+  /* Sticky header */
+  .country-table2 th {
+    font-size: 12px;
+  }
+  /* Table adjustments */
+  .country-table2 {
+    width: 100%;
+    border-spacing: 0; /* Use spacing instead of collapse */
+    font-size: 13px;
+  }
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .country-table2 th,
+  .country-table2 td {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .country-table2 th,
+  .country-table2 td {
+    padding: 6px;
+    font-size: 10px;
+  }
+
+  .country-table2 img {
+    width: 18px;
+    height: 18px;
+  }
+}

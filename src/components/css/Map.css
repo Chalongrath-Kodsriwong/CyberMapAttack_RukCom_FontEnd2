@@ -1,0 +1,107 @@
+/* ปรับขนาดของ SVG ให้เหมาะสมกับ container */
+svg {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* ป้องกันการขยายเกินขนาดของ container */
+    display: block; /* ลบ spacing ที่ไม่จำเป็น */
+    margin: 0 auto; /* จัดกึ่งกลาง */
+    /* background-color: #162344; */
+  }
+  
+  /* ตั้งค่า background และการแสดงผลของแผนที่ */
+  svg path {
+    transition: fill 0.3s ease, stroke 0.3s ease; /* เพิ่ม effect */
+  }
+  
+  /* เปลี่ยนสีเมื่อ hover */
+
+  /* สำหรับ container ของแผนที่ */
+  .map-container {
+    position: relative;
+    width: 100%; /* เต็มความกว้างของหน้าจอ */
+    padding-bottom: 60%; /* อัตราส่วนสำหรับ responsive */
+    overflow: hidden;
+  }
+  
+  /* จัดให้ SVG อยู่ภายใน container */
+  .map-container svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .tooltip{
+    /* outline: 1px solid green; */
+    font-size: 15px;
+    color: whitesmoke;
+    outline: 2px solid #39B5E0;
+    display: flex;
+  }
+
+  .bg_textLo{
+    outline: 1px solid #39B5E0;
+    border-radius: 5px;
+  }
+
+  .text_Lo{
+    color: #50c3e9;
+  }
+
+  /* Responsive Design */
+  /* สำหรับหน้าจอขนาดเล็กมาก */
+  @media (max-width: 576px) {
+    .map-container {
+      padding-bottom: 90%; /* เพิ่มอัตราส่วนให้เหมาะกับหน้าจอมือถือเล็ก */
+    }
+  
+    /* svg path {
+      stroke-width: 0.5; 
+    } */
+  }
+  
+  /* สำหรับหน้าจอขนาดเล็ก */
+  @media (max-width: 768px) {
+    .map-container {
+      padding-bottom: 80%; /* เพิ่มอัตราส่วนให้เหมาะกับหน้าจอเล็ก */
+    }
+  
+    /* svg path {
+      stroke-width: 0.6; 
+    } */
+  }
+  
+  /* สำหรับหน้าจอขนาดกลาง */
+  @media (max-width: 1024px) {
+    .map-container {
+      padding-bottom: 70%; /* ปรับอัตราส่วนให้เหมาะกับหน้าจอขนาดกลาง */
+    }
+  
+    /* svg path {
+      stroke-width: 0.8; 
+    } */
+  }
+  
+  /* สำหรับหน้าจอขนาดใหญ่ */
+  @media (max-width: 1440px) {
+    .map-container {
+      padding-bottom: 60%; /* ใช้อัตราส่วนปกติ */
+    }
+  
+    /* svg path {
+      stroke-width: 1; 
+    } */
+  }
+  
+  /* สำหรับหน้าจอขนาดใหญ่มาก */
+  @media (min-width: 1920px) {
+    .map-container {
+      padding-bottom: 50%; /* ลดอัตราส่วนให้เหมาะกับจอใหญ่ */
+    }
+  
+    /* svg path {
+      stroke-width: 1.5; 
+    } */
+  }
+  

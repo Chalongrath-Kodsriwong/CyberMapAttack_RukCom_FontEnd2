@@ -1,0 +1,140 @@
+/* Table container adjustments */
+.table-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 178%;
+  height: 310px;
+  overflow-y: auto;
+  background-color: rgba(22, 50, 91, 0.8);
+  padding: 0;
+  border-radius: 0px 8px 0px 0px;
+  border: 1px solid rgba(56, 56, 56, 0.5);
+}
+
+.table-container strong {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+/* Table adjustments */
+.country-table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.country-table th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(1, 8, 45, 0.952);
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 1px 10px;
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid rgba(56, 56, 56, 0.5);
+}
+
+.country-table td {
+  padding: 10px;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(47, 55, 74, 0.5);
+}
+
+.country-table tr:nth-child(even) {
+  background-color: rgba(0, 129, 129, 0.3);
+}
+
+.country-table tr:nth-child(odd) {
+  background-color: #0d2633b6;
+}
+
+.Count {
+  text-align: center;
+}
+
+/* Button container */
+.btn_hideShow {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  height: 80px;
+  margin: 130px auto;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+  background-color: rgba(12, 50, 68, 0.643);
+  outline: 1px solid #1c1c1c;
+}
+
+.Arrow3 {
+  display: none;
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+/* .TextCountry {
+  transform: rotate(90deg);
+} */
+
+.btn_hideShow:hover {
+  background-color: #1c1c1c;
+  color: #00bcd4;
+}
+
+.btn_hideShow:hover .Arrow3 {
+  display: inline;
+}
+
+.btn_hideShow:hover .TextCountry {
+  display: none;
+}
+
+/* Flag image styling */
+.country-table img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.country-table td:first-child {
+  text-align: center;
+}
+
+@media screen and (max-width: 1440px) {
+  /* Button container */
+.btn_hideShow {
+  position: absolute;
+  left: 20rem;
+  width: 60px;
+  height: 80px;
+  margin-top: 110px;
+}
+
+}
+
+@media (max-width: 768px) {
+  .country-table th,
+  .country-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .country-table th,
+  .country-table td {
+    font-size: 10px;
+    padding: 6px;
+  }
+  .country-table img {
+    width: 18px;
+    height: 18px;
+  }
+}
